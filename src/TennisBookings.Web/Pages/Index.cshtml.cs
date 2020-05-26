@@ -13,24 +13,25 @@ namespace TennisBookings.Web.Pages
         private readonly HomePageConfiguration _homePageConfiguration;
         private readonly IWeatherForecaster _weatherForecaster;
 
-        public IndexModel(IGreetingService greetingService, IOptions<HomePageConfiguration> homePageConfiguration,
+        public IndexModel(IGreetingService greetingService,
+            IOptionsSnapshot<HomePageConfiguration> homePageConfiguration,
             IWeatherForecaster weatherForecaster)
         {
             _greetingService = greetingService;
             _homePageConfiguration = homePageConfiguration.Value;
             _weatherForecaster = weatherForecaster;
+            GreetingColor = greetingService.GreetingColor ?? "black";
         }
 
         public string Greeting { get; private set; }
         public bool ShowGreeting => !string.IsNullOrEmpty(Greeting);
+        public string GreetingColor { get; private set; }
         public string ForecastSectionTitle { get; private set; }
         public string WeatherDescription { get; private set; }
         public bool ShowWeatherForecast { get; private set; }
 
         public async Task OnGet()
         {
-
-
             if (_homePageConfiguration.EnableGreeting)
             {
                 Greeting = _greetingService.GetRandomGreeting();

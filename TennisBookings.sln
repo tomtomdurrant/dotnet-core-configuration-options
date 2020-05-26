@@ -1,13 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5BA0B59-8D91-4F07-8090-34BDE097EFC9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisBookings.Web", "src\TennisBookings.Web\TennisBookings.Web.csproj", "{74A1EEEE-6FB1-482E-98AD-C1BC19078448}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherService.Api", "src\WeatherService.Api\WeatherService.Api.csproj", "{8AC8E8E8-A3C2-4A10-BCA8-CD8065901DF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{87718CB4-A533-4233-9085-14F4C9F64DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisBookings.Web.Tests", "TennisBookings.Web.Tests\TennisBookings.Web.Tests.csproj", "{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EF062ED-DBCD-486C-B6F0-CD1269BAD027}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +52,18 @@ Global
 		{8AC8E8E8-A3C2-4A10-BCA8-CD8065901DF0}.Release|x64.Build.0 = Release|Any CPU
 		{8AC8E8E8-A3C2-4A10-BCA8-CD8065901DF0}.Release|x86.ActiveCfg = Release|Any CPU
 		{8AC8E8E8-A3C2-4A10-BCA8-CD8065901DF0}.Release|x86.Build.0 = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|x64.Build.0 = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Debug|x86.Build.0 = Debug|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|x64.ActiveCfg = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|x64.Build.0 = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|x86.ActiveCfg = Release|Any CPU
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +71,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74A1EEEE-6FB1-482E-98AD-C1BC19078448} = {B5BA0B59-8D91-4F07-8090-34BDE097EFC9}
 		{8AC8E8E8-A3C2-4A10-BCA8-CD8065901DF0} = {B5BA0B59-8D91-4F07-8090-34BDE097EFC9}
+		{C463C5B2-9EAF-4AC4-983C-90F80DC1B671} = {87718CB4-A533-4233-9085-14F4C9F64DA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48D28C8F-7C17-44A2-8CBC-FE82743DB063}
